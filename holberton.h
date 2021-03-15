@@ -15,7 +15,7 @@ typedef struct format
 	char *f;
 
 
-} format_match;
+} format_t;
 
 
 /* helpers */
