@@ -15,7 +15,7 @@ typedef struct format
 	char *f;
 
 
-}
+} format_match;
 
 
 /* helpers */
@@ -24,8 +24,10 @@ int _putchar(char c);
 
 /* main functions */
 int printf_c();
+int printf_percent();
 int printf_str();
 int printf_int();
+int printf_decimal();
 int printf_bin();
 int prtinf_unsign_int();
 int printf_oct();
