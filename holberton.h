@@ -6,36 +6,38 @@
 #include <stdarg.h> // variadic functions
 #include <unistd.h> // system, read, write
 
-
 /**
  * struct format - struct for printf format
  */
+
 typedef struct format
 {
-	char *f;
-
-
+	// holds char pointers and function pointers
+	char *c;
+	char *(*f)(va_list);
 } format_t;
 
 
 /* helpers */
 int _putchar(char c);
-
+// add str_len
+// add str_copy
+// add print_num
+// add str_encopy
 
 /* main functions */
-int printf_c();
-int printf_percent();
-int printf_str();
-int printf_int();
-int printf_decimal();
-int printf_bin();
-int prtinf_unsign_int();
-int printf_oct();
-int printf_hex();
-int printf_HEX();
-int printf_ptr();
-int printf_special_string();
+int printf_c(va_list); // DO THIS
+int printf_percent(va_list); // DO THIS AFTER
+int printf_str(va_list); // DO THIS
+int printf_int(va_list); // DO THIS
+int printf_bin(va_list);
+int printf_unsign_int(va_list);
+int printf_oct(va_list);
+int printf_hex(va_list);
+int printf_HEX(va_list);
+int printf_ptr(va_list);
+int printf_special_string(va_list);
 int printf_str_rev();
-int printf_rot();
+int printf_rot(va_list);
 
 #endif
