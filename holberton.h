@@ -20,10 +20,10 @@ typedef struct format
 
 /* helpers */
 int _putchar(char c);
-// add str_len
-// add str_copy
+int _strlen(char *s);
+int _strcpy(char *dest, char *src)
+int _strncpy(char *dest, char *src, int n)
 // add print_num
-// add str_encopy
 
 /* main functions */
 int printf_c(va_list); // DO THIS
