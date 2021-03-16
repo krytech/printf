@@ -14,7 +14,7 @@ typedef struct format
 {
 	/* holds char pointers and function pointers */
 	char *c;
-	char (*f)(va_list);
+	int (*f)(va_list);
 } format_t;
 
 

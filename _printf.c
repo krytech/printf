@@ -37,11 +37,11 @@ int _printf(const char *format, ...)
 	int x;
 	int count = 0;
 	int (*func)(va_list);
+	va_list arg;
 
 	if (!format)
 		return (-1);
 
-	va_list arg;
 	va_start(arg, format);
 
 	for (x = 0; format[x] != '\0'; x++) /* go through the string */
