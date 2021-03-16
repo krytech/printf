@@ -35,7 +35,7 @@ int printf_bin(va_list);
 int printf_unsign_int(va_list);
 int printf_oct(va_list);
 int printf_hex(va_list);
-int printf_HEX(va_list);
+int printf_HEXU(va_list);
 int printf_ptr(va_list);
 int printf_special_string(va_list);
 int printf_str_rev();
