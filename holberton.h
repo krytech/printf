@@ -21,8 +21,8 @@ typedef struct format
 /* helpers */
 int _putchar(char c);
 int _strlen(char *s);
-int _strcpy(char *dest, char *src)
-int _strncpy(char *dest, char *src, int n)
+int _strcpy(char *dest, char *src);
+int _strncpy(char *dest, char *src, int n);
 // add print_num
 
 /* main functions */
