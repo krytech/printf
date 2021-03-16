@@ -3,7 +3,7 @@
 /**
  * find_function - matches the correct print function to use
  * @format: specific character
- * Return: function, -1 no match
+ * Return: function, null no match
  */
 
 int (*find_function(char format))(va_list)
@@ -50,11 +50,18 @@ int _printf(const char *format, ...)
 		{
 			x++; /* move to next character */
 			func = find_function(format[x]); /* match function */
-			count += func(arg);
+			if (func == NULL) /* if func doesn't match */
+			{
+				_putchar('%');
+				_putchar(format[x]);
+				count += 2;
+			}
+			else
+				count += func(arg);
 		}
 		else
 		{
-			_putchar(format[x]);
+			_putchar(format[x]); /* print string */
 			count++;
 		}
 	}

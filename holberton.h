@@ -24,11 +24,11 @@ int _strlen(char *s);
 int _strcpy(char *dest, char *src);
 int _strncpy(char *dest, char *src, int n);
 /* add print_num */
-
-/* main functions */
 int _printf(const char *format, ...);
-int printf_c(va_list);
-int printf_percent(va_list);
+int (*find_function(char format))(va_list);
+/* main functions */
+int printf_c(va_list c);
+int printf_percent(va_list p);
 int printf_str(va_list);
 int printf_int(va_list);
 int printf_bin(va_list);

@@ -1,12 +1,16 @@
 #include "holberton.h"
 
-int print_c(va_list val)
+/**
+ * printf_c - prints the relevant character
+ */
+
+int printf_c(va_list c)
 {
-	char c;
+	char character;
 
-	c = va_arg(val, int);
+	character = va_arg(c, int);
 
-	_putchar(c);
+	_putchar(character);
 
 	return (0);
 }
