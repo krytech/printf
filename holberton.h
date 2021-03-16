@@ -26,6 +26,7 @@ int _strncpy(char *dest, char *src, int n);
 /* add print_num */
 
 /* main functions */
+int _printf(const char *format, ...);
 int printf_c(va_list);
 int printf_percent(va_list);
 int printf_str(va_list);

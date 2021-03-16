@@ -24,7 +24,7 @@ int (*find_function(char format))(va_list)
 		if (format == *array[i].c)
 			return (array[i].f);
 	}
-	return (-1);
+	return (NULL);
 }
 
 /**
@@ -34,7 +34,6 @@ int (*find_function(char format))(va_list)
 
 int _printf(const char *format, ...)
 {
-	char *s;
 	int x;
 	int count = 0;
 	int (*func)(va_list);
