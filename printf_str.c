@@ -6,7 +6,7 @@
  * Return: String
  */
 
-int printf_str(va_list)
+int printf_str(va_list str)
 {
 	char s;
 	s = va_arg(val, str);

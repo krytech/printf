@@ -38,7 +38,7 @@ int printf_hex(va_list);
 int printf_HEXU(va_list);
 int printf_ptr(va_list);
 int printf_special_string(va_list);
-int printf_str_rev();
+int printf_str_rev(va_list);
 int printf_rot(va_list);
 
 #endif
