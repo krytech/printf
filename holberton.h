@@ -3,8 +3,8 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdarg.h> // variadic functions
-#include <unistd.h> // system, read, write
+#include <stdarg.h> /* variadic functions */
+#include <unistd.h> /* system, read, write */
 
 /**
  * struct format - struct for printf format
@@ -12,7 +12,7 @@
 
 typedef struct format
 {
-	// holds char pointers and function pointers
+	/* holds char pointers and function pointers */
 	char *c;
 	char (*f)(va_list);
 } format_t;
@@ -23,13 +23,13 @@ int _putchar(char c);
 int _strlen(char *s);
 int _strcpy(char *dest, char *src);
 int _strncpy(char *dest, char *src, int n);
-// add print_num
+/* add print_num */
 
 /* main functions */
-int printf_c(va_list); // DO THIS
-int printf_percent(va_list); // DO THIS AFTER
-int printf_str(va_list); // DO THIS
-int printf_int(va_list); // DO THIS
+int printf_c(va_list);
+int printf_percent(va_list);
+int printf_str(va_list);
+int printf_int(va_list);
 int printf_bin(va_list);
 int printf_unsign_int(va_list);
 int printf_oct(va_list);
