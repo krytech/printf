@@ -31,7 +31,7 @@ int (*find_function(char format))(va_list)
  *
  */
 
-int _printf(char *format, ...)
+int _printf(const char *format, ...)
 {
 	char *s;
 	int x;
@@ -53,7 +53,10 @@ int _printf(char *format, ...)
 			count += func(arg);
 		}
 		else
-//nullbye
+		{
+			_putchar(format[x]);
+			count++;
+		}
 	}
 	va_end(arg);
 	return (count);
