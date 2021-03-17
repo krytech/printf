@@ -29,7 +29,7 @@ int (*find_function(char format))(va_list);
 /* main functions */
 int printf_c(va_list c);
 int printf_percent(va_list p);
-int printf_str(va_list);
+int printf_str(va_list arg);
 int printf_int(va_list);
 int printf_bin(va_list);
 int printf_unsign_int(va_list);
