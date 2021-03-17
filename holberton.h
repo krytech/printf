@@ -21,8 +21,8 @@ typedef struct format
 /* helpers */
 int _putchar(char c);
 int _strlen(char *s);
-int _strcpy(char *dest, char *src);
-int _strncpy(char *dest, char *src, int n);
+char *_strcopy(char *dest, char *src);
+char *_strncpy(char *dest, char *src, int n);
 /* add print_num */
 int _printf(const char *format, ...);
 int (*find_function(char format))(va_list);
@@ -30,6 +30,7 @@ int (*find_function(char format))(va_list);
 int printf_c(va_list c);
 int printf_percent(va_list p);
 int printf_str(va_list arg);
+/*
 int printf_int(va_list);
 int printf_bin(va_list);
 int printf_unsign_int(va_list);
@@ -40,5 +41,6 @@ int printf_ptr(va_list);
 int printf_special_string(va_list);
 int printf_str_rev(va_list);
 int printf_rot(va_list);
+*/
 
 #endif
