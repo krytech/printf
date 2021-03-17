@@ -11,7 +11,7 @@ int (*find_function(char format))(va_list)
 	int i;
 
 	format_t array[] = {
-		{"c", printf_c},{"%", printf_percent}, {"s", printf_str},
+		{"c", printf_c}, {"%", printf_percent}, {"s", printf_str},
 		{"i", printf_int}, {"d", printf_int}, {"b", printf_bin},
 		{"u", printf_unsign_int}, {"o", printf_oct}, {"x", printf_hex},
 		{"X", printf_HEXU}, {"p", printf_ptr},
@@ -30,6 +30,7 @@ int (*find_function(char format))(va_list)
 /**
  * _printf - prints formatted string to sto
  * @format: format argument
+ * Return: count
  */
 
 int _printf(const char *format, ...)
