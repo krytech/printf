@@ -21,8 +21,6 @@ typedef struct format
 /* helpers */
 int _putchar(char c);
 int _strlen(char *s);
-char *_strcopy(char *dest, char *src);
-char *_strncpy(char *dest, char *src, int n);
 /* add print_num */
 int _printf(const char *format, ...);
 int (*find_function(char format))(va_list);
